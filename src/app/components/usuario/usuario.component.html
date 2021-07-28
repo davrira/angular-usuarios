@@ -1,0 +1,24 @@
+
+<div>
+  <select class="form-select" aria-label="Default select example" >    
+    <option value="1">All</option>
+    <option value="2">Admins</option>
+    <option value="3">Users</option>
+  </select>
+</div>
+
+<div >
+<div class="card" style="width: 18rem;" *ngFor="let usuario of usuarios; let i = index" >
+    <div class="card-body">
+      <h5 class="card-title"> Nombre {{usuario.name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted"> Apellido {{usuario.lastName}}</h6>
+      <p class="card-text"> correo {{usuario.email}}</p>
+      <p class="card-text"> tipo: {{usuario.type}} </p>
+      
+      <button (click) = "verUsuario(i)"
+        type="button" class="btn btn-outline-primary"  >Ver mas
+      </button>
+      
+    </div>
+  </div>
+</div>

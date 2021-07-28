@@ -1,0 +1,32 @@
+<form action="" (ngSubmit) = "agregar()">
+  
+  <div class="mb-3">
+    <label class="form-label">Nombre</label>
+    <input name="nombre" type="text" class="form-control" [(ngModel)]="nombre">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Apellido</label>
+    <input name="apellido" class="form-control" [(ngModel)]="apellido" >
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input name="email" class="form-control" [(ngModel)]="email" >
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Numero</label>
+    <input name="numero" class="form-control" [(ngModel)]="numero" >
+  </div>
+
+  <select name="tipoUsuario" id="tipoUsuario" [(ngModel)]="tipoUsuario" class="form-select" aria-label="Default select example">
+    <option selected>Seleccione el tipo de Usuario</option>
+    <option value="1">user</option>
+    <option value="2">admin</option>    
+  </select>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+

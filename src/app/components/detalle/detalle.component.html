@@ -1,0 +1,11 @@
+
+<h1> Nombre {{usuario.name}}</h1>
+<h2> Apellido {{usuario.lastName}}</h2>
+<hr>
+    <div>
+        <p> Correo {{usuario.email}}</p>
+        <p> Telefono {{usuario.phoneNumber}}</p>
+    </div>
+<hr>
+<button (click) = "eliminar(usuario.id)" type="button" class="btn btn-outline-primary"> Borrar</button>
+<button (click) = "editar(usuario.id)" type="button" class="btn btn-outline-primary " >Editar</button>

@@ -1,0 +1,34 @@
+<form action="" (ngSubmit) = "editar()">
+
+      
+    <div class="mb-3">
+      <label class="form-label">Nombre</label>
+      <input name="nombre" type="text" class="form-control" placeholder={{usuarioEdit.name}} [(ngModel)]="nombre"  >
+    </div>
+  
+    <div class="mb-3">
+      <label class="form-label">Apellido</label>
+      <input name="apellido" class="form-control" placeholder={{usuarioEdit.lastName}} [(ngModel)]="apellido" >      
+    </div>
+  
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input name="email" class="form-control" placeholder={{usuarioEdit.email}} [(ngModel)]="email" > 
+    </div>
+  
+    <div class="mb-3">
+      <label class="form-label">Numero</label>
+      <input name="numero" class="form-control" placeholder={{usuarioEdit.phoneNumber}} [(ngModel)]="numero" >
+    </div>
+  
+    <select name="tipoUsuario" id="tipoUsuario"  class="form-select" aria-label="Default select example"  [(ngModel)]="tipoUsuario">
+      <option selected>Seleccione el tipo de Usuario</option>
+      <option value="1">user</option>
+      <option value="2">admin</option>    
+    </select>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  
+  </form>
+  
+  
