@@ -1,6 +1,6 @@
 
 export class Usuario{
-    id:number=12;
+    id:number=0;
     name:string="";
     lastName:string = "";
     email:string="";
