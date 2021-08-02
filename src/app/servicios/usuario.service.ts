@@ -51,5 +51,9 @@ export class UsuarioService {
     editar(usuario:Usuario, ids:number){
         this.usuarioInfo.fill(usuario,ids,ids+1)
     }
+
+    obtenerUno(id:number){
+        return this.usuarioInfo.find(usuario => usuario.id === id)
+    }
     
 }//class
